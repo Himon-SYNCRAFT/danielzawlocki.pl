@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<title>Daniel Zawłocki - Programista</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<style>
+			body {
+				font-family: 'Raleway', sans-serif;
+				text-align: justify;
+			}
+
+			nav {
+				-webkit-box-shadow:0px 0px 4px lightslategray;
+				-moz-box-shadow:0px 0px 4px lightslategray;
+				box-shadow:0px 0px 4px lightslategray;
+			}
+
+			.navbar.navbar-default, footer {
+				font-size: 20px;
+				padding: 30px 50px;
+				background-color: #afdde9;
+				border: none;
+				border-radius: 0;
+				margin-bottom: 0px;
+			}
+
+			.navbar>.container-fluid .navbar-brand,
+			.navbar-default .navbar-nav li a {
+				color: white;
+				border-bottom: 1px solid #afdde9;
+				font-weight: 500;
+			}
+
+			.navbar-default .navbar-nav li a:hover {
+				color: #2c89a0;
+				border-bottom: 1px solid #2c89a0;
+			}
+
+			h2 {
+				font-weight: bold;
+				font-size: 48px;
+				padding-bottom: 30px;
+			}
+
+			article.row {
+				padding: 120px 65px;
+				border-left: 1px solid #afdde9;
+				border-right: 1px solid #afdde9;
+				font-size: 16px;
+				font-weight: 500;
+			}
+
+			a {
+				color: #2c89a0;
+			}
+
+			#about {
+				margin-top: 100px;
+			}
+
+			#about,
+			#experience {
+				color: #2c89a0;
+			}
+
+			#projects {
+				background-color: #afdde9;
+				color: white;
+			}
+
+			#projects a {
+				color: #2c89a0;
+			}
+
+			#projects .row {
+				margin-bottom: 60px;
+			}
+
+			#contact {
+				margin-top: 30px;
+			}
+
+			#contact a {
+				padding-right: 20px;
+			}
+
+			#contact a span {
+				padding-left: 4px;
+			}
+
+			footer {
+				color: white;
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#about">O mnie</a></li>
+							<li><a href="#projects">Projekty</a></li>
+							<li><a href="#experience">Doświadczenie</a></li>
+							<li><a href="#about">Kontakt</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<article class="row" id="about">
+				<div class="col-md-12">
+					<h2>O mnie</h2>
+					<p>Hej, nazywam się <strong>Daniel Zawłocki</strong> i jestem programistą, aktualnie mieszkającym w Częstochowie. W swojej pracy lubię używać <strong>Pythona, Flask</strong> oraz <strong>React.js</strong>. Posiadam też doświadczenie w pisaniu aplikacji korzystających z <strong>PHP5 (framework Codeigniter)</strong> oraz tworzeniu skryptów/pluginów w języku <strong>Groovy</strong> dla systemu ERP Streamsoft Verto. Moje projekty publiczne (tworzone głównie w celach naukowych) dostępne są na moim koncie <strong><a target="_blank" href="https://github.com/Himon-SYNCRAFT">github</a></strong>.</p>
+					<p>Jeśli chcesz nawiązać ze mną współpracę możesz napisać do mnie na: <a href="mailto:d.zawlocki@danielzawlocki.pl"><strong>d.zawlocki@danielzawlocki.pl</strong></a></p>
+					<div id="contact">
+						<a href="mailto:d.zawlocki@danielzawlocki.pl">
+							<i class="fa fa-envelope fa-lg"></i><span> Email</span>
+						</a>
+						<a target="_blank" href="https://github.com/Himon-SYNCRAFT">
+							<i class="fa fa-github fa-lg"></i><span> Github</span>
+						</a>
+						<a target="_blank" href="https://codepen.io/Himon/">
+							<i class="fa fa-codepen fa-lg"></i><span> Codepen</span>
+						</a>
+						<a target="_blank" href="https://trello.com/himon">
+							<i class="fa fa-trello fa-lg"></i><span> Trello</span>
+						</a>
+					</div>
+				</div>
+			</article>
+			<article class="row" id="projects">
+				<div class="col-md-12">
+					<h2>Projekty / Dema / Eksperymenty</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<img class="img-responsive" src="assets/img/taskplus.png" alt="">
+						</div>
+						<div class="col-md-6">
+							<p>
+								<strong>Taskplus</strong><br>
+								Projekt do zarządzania zadaniami z podziałem na wykonawców oraz zleceniodawców. Api zostało wykonane z użyciem Python3 oraz Flask. Klient wykorzystuje React.js.
+							</p>
+							<p>
+								<strong>Cele:</strong>
+								<ul>
+									<li>Wypracowanie stabilnego procesu wytwarzania oprogramowania</li>
+									<li>Zapoznanie się z tzw. "Clean Architecture" Roberta Martina</li>
+									<li>Nauka React.js, flux</li>
+								</ul>
+							</p>
+							<p>
+								<strong>Demo: </strong>
+								<a target="_blank" href="http://danielzawlocki.pl/taskplus">link</a>
+							</p>
+							<p>
+								<strong>Kod źródłowy: </strong>
+								<ul>
+									<li><a target="_blank" href="https://github.com/Himon-SYNCRAFT/taskplus">API</a></li>
+									<li><a target="_blank" href="https://github.com/Himon-SYNCRAFT/taskreact">Klient</a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<p>
+								<strong>Oghma</strong><br>
+								Aplikacja do wymiany książek pomiędzy użytkownikami. Wykorzystuje express.js oraz React.
+							</p>
+							<p>
+								<strong>Cele:</strong>
+								<ul>
+									<li>Zapoznanie się z nodejs, express.js</li>
+									<li>Nauka React.js, flux</li>
+								</ul>
+							</p>
+							<p>
+								<strong>Demo: </strong>
+								<a target="_blank" href="http://danielzawlocki.pl/oghma">link</a>
+							</p>
+							<p>
+								<strong>Kod źródłowy: </strong>
+								<a target="_blank" href="https://github.com/Himon-SYNCRAFT/oghma">Oghma</a>
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive" src="assets/img/taskplus.png" alt="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<img class="img-responsive" src="assets/img/taskplus.png" alt="">
+						</div>
+						<div class="col-md-6">
+							<p>
+								<strong>Memento</strong><br>
+								Aplikacja wspomagająca uczenie poprzez gromadzenie materiałów do powtórzenia oraz wyznaczanie terminów kolejnych powtórek.
+							</p>
+							<p>
+								<strong>Demo: </strong>
+								<a target="_blank" href="http://danielzawlocki.pl/memento">link</a>
+							</p>
+							<p>
+								<strong>Kod źródłowy: </strong>
+								<a target="_blank" href="https://github.com/Himon-SYNCRAFT/memento">Memento</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="row" id="experience">
+				<div class="col-md-12">
+					<h2>Doświadczenie</h2>
+					<ul>
+						<li>Eltrox (01.10.2013 - obecnie):
+							<ul>
+								<li>
+									Informatyk pomocnik (01.10.2013 - 2014), obowiązki:
+									<ul>
+										<li>wystawianie aukcji w serwisie Allegro</li>
+										<li>aktualizacja opisów sklepu internetowego</li>
+									</ul>
+								</li>
+								<li>
+									Kierownik działu zajmującego się obsługą Allegro oraz sklepu internetowego od strony informatycznej (2014 - 2016), obowiązki:
+									<ul>
+										<li>utrzymanie i rozwój aplikacji służącej do zarządzania ofertą w serwisie Allegro oraz w sklepie internetowym</li>
+										<li>usprawnianie procesów w dziale</li>
+										<li>szkolenie/wdrażanie nowych pracowników</li>
+									</ul>
+								</li>
+								<li>
+									Programista PHP, Javascript, Groovy (2016 - obecnie), obowiązki:
+									<ul>
+										<li>utrzymanie i rozwój aplikacji służącej do zarządzania ofertą w serwisie Allegro oraz w sklepie internetowym</li>
+										<li>tworzenie pluginów/skryptów dla systemu ERP Verto</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<footer class="row">Daniel Zawłocki &copy; 2017</footer>
+		</div>
+	</body>
+</html>
